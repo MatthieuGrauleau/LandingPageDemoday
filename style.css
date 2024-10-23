@@ -1,4 +1,4 @@
-/* Reset et variables */
+/* Reset and variables */
 :root {
     --primary-color: #FFA500;
     --primary-dark: #FF8C00;
@@ -8,6 +8,8 @@
     --accent-bg: #FFF8E7;
     --gray-light: #F5F5F5;
     --gray-dark: #666666;
+    --github-color: #24292e;
+    --github-hover: #2f363d;
 }
 
 * {
@@ -33,7 +35,7 @@ body {
     padding: 0 20px;
 }
 
-/* Header */
+/* Header and Navigation */
 .header {
     position: fixed;
     width: 100%;
@@ -47,22 +49,26 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem 2rem;
+    padding: 0.5rem 2rem;
     max-width: 1200px;
     margin: 0 auto;
 }
 
 .logo {
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: var(--primary-color);
+    display: flex;
+    align-items: center;
     text-decoration: none;
-    transition: color 0.3s ease;
-    cursor: pointer;
+    padding: 0.5rem 0;
 }
 
-.logo:hover {
-    color: var(--primary-dark);
+.logo-image {
+    height: 40px;
+    width: auto;
+    transition: transform 0.3s ease;
+}
+
+.logo:hover .logo-image {
+    transform: scale(1.05);
 }
 
 .nav-links {
@@ -74,7 +80,7 @@ body {
     text-decoration: none;
     color: var(--text-color);
     font-weight: 500;
-    transition: color 0.3s ease;
+    transition: all 0.3s ease;
     padding: 0.5rem 1rem;
     border-radius: 4px;
 }
@@ -328,7 +334,38 @@ body {
 }
 
 .footer-content {
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+.github-link {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    background-color: var(--github-color);
+    transition: all 0.3s ease;
+}
+
+.github-link:hover {
+    background-color: var(--github-hover);
+    transform: translateY(-2px);
+}
+
+.github-icon {
+    width: 24px;
+    height: 24px;
 }
 
 .copyright {
@@ -373,6 +410,10 @@ body {
     .section-title {
         font-size: 2rem;
     }
+
+    .logo-image {
+        height: 35px;
+    }
 }
 
 @media (max-width: 768px) {
@@ -383,6 +424,10 @@ body {
 
     .logo {
         margin-bottom: 1rem;
+    }
+
+    .logo-image {
+        height: 32px;
     }
 
     .nav-links {
@@ -410,6 +455,15 @@ body {
     .sectors-list {
         grid-template-columns: 1fr;
     }
+
+    .github-link {
+        padding: 0.4rem 0.8rem;
+    }
+
+    .github-icon {
+        width: 20px;
+        height: 20px;
+    }
 }
 
 @media (max-width: 480px) {
@@ -429,6 +483,10 @@ body {
     .feature-card,
     .tech-card {
         padding: 1rem;
+    }
+
+    .logo-image {
+        height: 28px;
     }
 }
 
