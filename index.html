@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BeeVisiting - Gestion de Visites Guidées</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav-container">
+            <a href="#top" class="logo">BeeVisiting</a>
+            <div class="nav-links">
+                <a href="#features" class="nav-link">Fonctionnalités</a>
+                <a href="#about" class="nav-link">À propos</a>
+                <a href="#technical" class="nav-link">Technique</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Intro Section -->
+    <section id="top" class="intro-section">
+        <div class="container">
+            <div class="intro-grid">
+                <div class="intro-content">
+                    <h1 class="main-title">BeeVisiting</h1>
+                    <p class="intro-text">Révolutionnez vos visites guidées avec notre plateforme innovante. Une solution complète pour les guides et les visiteurs, adaptée à tous types d'établissements.</p>
+                    <a href="#contact" class="cta-button">Découvrir la solution</a>
+                </div>
+                <div class="intro-image">
+                    <img src="dashboard-preview.jpg" alt="BeeVisiting Interface" class="preview-image">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features-section">
+        <div class="container">
+            <h2 class="section-title">Fonctionnalités Principales</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-image">
+                        <img src="feature1.jpg" alt="Gestion des visites">
+                    </div>
+                    <h3 class="feature-title">Gestion des Visites en Temps Réel</h3>
+                    <p class="feature-description">
+                        Créez, personnalisez et gérez vos parcours de visite. Synchronisation en temps réel entre guides et visiteurs, même en zones à faible connexion.
+                    </p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-image">
+                        <img src="feature2.jpg" alt="Experience visiteur">
+                    </div>
+                    <h3 class="feature-title">Expérience Visiteur Interactive</h3>
+                    <p class="feature-description">
+                        Offrez une expérience immersive avec contenus multimédia, navigation intuitive et support multilingue. Suivez les visites sur place ou à distance.
+                    </p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-image">
+                        <img src="feature3.jpg" alt="Analytics">
+                    </div>
+                    <h3 class="feature-title">Analytics et Retours</h3>
+                    <p class="feature-description">
+                        Collectez et analysez les retours des visiteurs, mesurez l'impact de chaque étape, et optimisez vos parcours grâce aux données détaillées.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <h2 class="section-title">À Propos</h2>
+            <div class="about-content">
+                <p class="about-text">
+                    BeeVisiting est né d'une collaboration avec des professionnels du tourisme et de l'industrie, 
+                    qui cherchaient une solution moderne pour gérer leurs visites guidées. Développé dans le cadre 
+                    d'un projet Holberton School, il répond aux besoins actuels des guides et des visiteurs.
+                </p>
+                <div class="sectors-grid">
+                    <h3 class="sectors-title">Secteurs d'Application</h3>
+                    <ul class="sectors-list">
+                        <li>Musées et galeries d'art</li>
+                        <li>Sites industriels et entreprises</li>
+                        <li>Offices de tourisme</li>
+                        <li>Sites historiques et culturels</li>
+                        <li>Établissements éducatifs</li>
+                        <li>Caves et vignobles</li>
+                        <li>Parcs et réserves naturelles</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technical Section -->
+    <section id="technical" class="technical-section">
+        <div class="container">
+            <h2 class="section-title">Caractéristiques Techniques</h2>
+            <div class="tech-grid">
+                <div class="tech-card">
+                    <h3>Application Mobile</h3>
+                    <ul>
+                        <li>React Native</li>
+                        <li>iOS & Android</li>
+                        <li>Mode hors-ligne</li>
+                        <li>QR Code Access</li>
+                    </ul>
+                </div>
+                <div class="tech-card">
+                    <h3>Interface Web</h3>
+                    <ul>
+                        <li>React.js</li>
+                        <li>Temps réel</li>
+                        <li>Administration</li>
+                        <li>Analytics</li>
+                    </ul>
+                </div>
+                <div class="tech-card">
+                    <h3>Fonctionnalités</h3>
+                    <ul>
+                        <li>Multilingue</li>
+                        <li>Gestion média</li>
+                        <li>Synchronisation</li>
+                        <li>Statistiques</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p class="copyright">© 2024 BeeVisiting. Tous droits réservés.</p>
+                <p class="school-link">
+                    Un projet 
+                    <a href="https://www.holbertonschool.com" target="_blank" rel="noopener noreferrer">
+                        Holberton School
+                    </a>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.querySelector('.logo').addEventListener('click', function(e) {
+            e.preventDefault();
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+    </script>
+</body>
+</html>
